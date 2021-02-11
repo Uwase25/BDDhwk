@@ -38,23 +38,23 @@ public class StepDefinition  {
 
 	}
 
-	@When("Users enter \"([^\"]*)\" and \"([^\"]*)\"$")
+	@When("User enters \"([^\"]*)\" and \"([^\"]*)\"$")
 
-	public void Users_enter_and(String username, String password) throws Throwable {
+	public void User_enters_and(String username, String password) throws Throwable {
 		loginPage.enterCredentials(username, password);
 		Thread.sleep(2000);
 	}
 
-	@When("^Users click on signin button$")
+	@When("^User clicks on signin button$")
 
-	public void Users_click_on_signin_button() throws Throwable {
+	public void User_clicks_on_signin_button() throws Throwable {
 		loginPage.clickOnSignInButton();
 		Thread.sleep(2000);
 	}
 
-	@When("^Users should land on Dashboard page$")
+	@Then("^User should land on Dashboard page$")
 
-	public void Users_should_land_on_Dashboard_page() throws IOException {
+	public void User_should_land_on_Dashboard_page() throws IOException {
 
 		Assert.assertEquals("Dashboard- iBilling", loginPage.getPageTitle());
 
@@ -75,17 +75,10 @@ public class StepDefinition  {
 		Thread.sleep(2000);
 	}
 	
-	@Then("^User should land on Accounts page$")
 	
-	public void user_should_land_on_Accounts_page() throws Throwable {
-	   Assert.assertEquals("Accounts- iBilling", addNewAccountPage.getPageTitle());
-	   addNewAccountPage.takeScreenshotAtEndOfTest(driver);
-	   
-	} 
+	@When("^User fills up the form entering \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
 	
-	@Then("^User enters \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
-	
-	public void user_enters_and_and_and_and_and_and(String AccountTitle, String Description, String InitialBalance, String AccountNumber, String ContactPerson, String Phone, String InternetBankingURL) throws Throwable {
+	public void User_fills_up_the_form_entering_and_and_and_and_and_and(String AccountTitle, String Description, String InitialBalance, String AccountNumber, String ContactPerson, String Phone, String InternetBankingURL) throws Throwable {
 		addNewAccountPage.enterAccountTitle(AccountTitle);
 		addNewAccountPage.enterDescription(Description);
 		addNewAccountPage.enterInitialBalance(InitialBalance);
@@ -96,14 +89,18 @@ public class StepDefinition  {
 		Thread.sleep(2000);
 	}
 	
-	@Then("^User clicks on Submit Button$")
+	@When("^User clicks on Submit Button$")
 	
 	public void  User_clicks_on_Submit_Button() throws Throwable {
 		addNewAccountPage.clickOnSubmitButton();
-		addNewAccountPage.takeScreenshotAtEndOfTest(driver);
-		
 	}
-	
+		
+	@Then("^User should be able to see validate$")
+		public void User_should_be_able_to_see_validate() throws IOException {
+		   Assert.assertEquals("Accounts- iBilling", addNewAccountPage.getPageTitle());
+		   addNewAccountPage.takeScreenshotAtEndOfTest(driver);
+		   
+		} 
 	@After
 	public void tearDown() {
 	driver.close();

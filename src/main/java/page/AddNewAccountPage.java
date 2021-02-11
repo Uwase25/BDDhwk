@@ -10,13 +10,13 @@ public class AddNewAccountPage extends BasePage {
 	WebDriver driver;
 	
 	public AddNewAccountPage(WebDriver driver) {
-		this.driver = driver;
+		this.driver = driver; 
 	}
 	
 //		Element Library
 	    @FindBy(how= How.XPATH, using= "//span[contains(text( ),'Bank & Cash' )]") WebElement Bank_And_Cash ;
 	    @FindBy(how= How.XPATH, using="//a[contains(text( ),'New Account' )]") WebElement New_Account;
-		@FindBy(how= How.XPATH, using="//a[contains(text( ),'Accounts' )]") WebElement Accounts;
+		
 	    
 		@FindBy(how= How.XPATH, using="//input[@id='account']") WebElement Account_Title;
 		@FindBy(how= How.XPATH, using="//input[@id='description']") WebElement Description_field;
@@ -40,15 +40,6 @@ public class AddNewAccountPage extends BasePage {
 		public void clickOnNewAccountButton() {
 			New_Account.click();
 		}
-		
-		public String getPageTitle() {
-			return driver.getTitle();
-	}
-		
-		public void validateAccounts() {
-			waitForElement(driver, 5, Accounts);
-		} 
-		
 		
 		public void enterAccountTitle(String AccountTitle) {
 			int genNum = randomGenerator(999);
@@ -80,5 +71,9 @@ public class AddNewAccountPage extends BasePage {
 		public void clickOnSubmitButton() {
 			Submit_Button.click();
 			
+		}
+		
+		public String getPageTitle() {
+	        return driver.getTitle();
 		}
 }

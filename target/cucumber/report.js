@@ -26,46 +26,46 @@ formatter.scenarioOutline({
 });
 formatter.step({
   "line": 9,
-  "name": "Users enter \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+  "name": "User enters \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
   "keyword": "When "
 });
 formatter.step({
   "line": 10,
-  "name": "Users click on signin button",
-  "keyword": "When "
+  "name": "User clicks on signin button",
+  "keyword": "And "
 });
 formatter.step({
   "line": 11,
-  "name": "Users should land on Dashboard page",
-  "keyword": "And "
+  "name": "User should land on Dashboard page",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 12,
   "name": "User clicks on Bank And Cash",
-  "keyword": "And "
+  "keyword": "When "
 });
 formatter.step({
   "line": 13,
   "name": "User clicks on New Account",
-  "keyword": "And "
+  "keyword": "When "
 });
 formatter.step({
   "line": 14,
-  "name": "User should land on Accounts page",
-  "keyword": "Then "
+  "name": "User fills up the form entering \"\u003cAccountTitle\u003e\" and \"\u003cDescription\u003e\" and \"\u003cInitialBalance\u003e\" and \"\u003cAccountNumber\u003e\" and \"\u003cContactPerson\u003e\" and \"\u003cPhone\u003e\" and \"\u003cInternetBankingURL\u003e\"",
+  "keyword": "When "
 });
 formatter.step({
   "line": 15,
-  "name": "User enters \"\u003cAccountTitle\u003e\" and \"\u003cDescription\u003e\" and \"\u003cInitialBalance\u003e\" and \"\u003cAccountNumber\u003e\" and \"\u003cContactPerson\u003e\" and \"\u003cPhone\u003e\" and \"\u003cInternetBankingURL\u003e\"",
-  "keyword": "Then "
+  "name": "User clicks on Submit Button",
+  "keyword": "And "
 });
 formatter.step({
   "line": 16,
-  "name": "User clicks on Submit Button",
+  "name": "User should be able to see validate",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 19,
+  "line": 18,
   "name": "",
   "description": "",
   "id": "login-functionality-feature;user-should-be-able-to-login-with-the-valid-credentials-and-create-new-account;",
@@ -82,7 +82,7 @@ formatter.examples({
         "Phone",
         "InternetBankingURL"
       ],
-      "line": 20,
+      "line": 19,
       "id": "login-functionality-feature;user-should-be-able-to-login-with-the-valid-credentials-and-create-new-account;;1"
     },
     {
@@ -97,14 +97,14 @@ formatter.examples({
         "2343212342",
         "https://www.USbank.com"
       ],
-      "line": 21,
+      "line": 20,
       "id": "login-functionality-feature;user-should-be-able-to-login-with-the-valid-credentials-and-create-new-account;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 4818763499,
+  "duration": 5170382400,
   "status": "passed"
 });
 formatter.background({
@@ -123,11 +123,11 @@ formatter.match({
   "location": "StepDefinition.User_is_on_Techfios_login_page()"
 });
 formatter.result({
-  "duration": 1200012800,
+  "duration": 1850947800,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 21,
+  "line": 20,
   "name": "User should be able to login with the valid credentials and create new account",
   "description": "",
   "id": "login-functionality-feature;user-should-be-able-to-login-with-the-valid-credentials-and-create-new-account;;2",
@@ -146,7 +146,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 9,
-  "name": "Users enter \"demo@techfios.com\" and \"abc123\"",
+  "name": "User enters \"demo@techfios.com\" and \"abc123\"",
   "matchedColumns": [
     0,
     1
@@ -155,32 +155,27 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "Users click on signin button",
-  "keyword": "When "
+  "name": "User clicks on signin button",
+  "keyword": "And "
 });
 formatter.step({
   "line": 11,
-  "name": "Users should land on Dashboard page",
-  "keyword": "And "
+  "name": "User should land on Dashboard page",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 12,
   "name": "User clicks on Bank And Cash",
-  "keyword": "And "
+  "keyword": "When "
 });
 formatter.step({
   "line": 13,
   "name": "User clicks on New Account",
-  "keyword": "And "
+  "keyword": "When "
 });
 formatter.step({
   "line": 14,
-  "name": "User should land on Accounts page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 15,
-  "name": "User enters \"Uwase\" and \"FamilyAccount\" and \"200\" and \"12345\" and \"JU\" and \"2343212342\" and \"https://www.USbank.com\"",
+  "name": "User fills up the form entering \"Uwase\" and \"FamilyAccount\" and \"200\" and \"12345\" and \"JU\" and \"2343212342\" and \"https://www.USbank.com\"",
   "matchedColumns": [
     2,
     3,
@@ -190,11 +185,16 @@ formatter.step({
     7,
     8
   ],
-  "keyword": "Then "
+  "keyword": "When "
+});
+formatter.step({
+  "line": 15,
+  "name": "User clicks on Submit Button",
+  "keyword": "And "
 });
 formatter.step({
   "line": 16,
-  "name": "User clicks on Submit Button",
+  "name": "User should be able to see validate",
   "keyword": "Then "
 });
 formatter.match({
@@ -208,89 +208,93 @@ formatter.match({
       "offset": 37
     }
   ],
-  "location": "StepDefinition.Users_enter_and(String,String)"
+  "location": "StepDefinition.User_enters_and(String,String)"
 });
 formatter.result({
-  "duration": 2421306200,
+  "duration": 2379132200,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinition.Users_click_on_signin_button()"
+  "location": "StepDefinition.User_clicks_on_signin_button()"
 });
 formatter.result({
-  "duration": 3755940900,
+  "duration": 3709570900,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinition.Users_should_land_on_Dashboard_page()"
+  "location": "StepDefinition.User_should_land_on_Dashboard_page()"
 });
 formatter.result({
-  "duration": 471261799,
+  "duration": 387689600,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.User_clicks_on_Bank_And_Cash()"
 });
 formatter.result({
-  "duration": 2106548200,
+  "duration": 2108530600,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.User_clicks_on_New_Account()"
 });
 formatter.result({
-  "duration": 3034883601,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.user_should_land_on_Accounts_page()"
-});
-formatter.result({
-  "duration": 373475699,
+  "duration": 2726330701,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "Uwase",
-      "offset": 13
+      "offset": 33
     },
     {
       "val": "FamilyAccount",
-      "offset": 25
-    },
-    {
-      "val": "200",
       "offset": 45
     },
     {
+      "val": "200",
+      "offset": 65
+    },
+    {
       "val": "12345",
-      "offset": 55
+      "offset": 75
     },
     {
       "val": "JU",
-      "offset": 67
+      "offset": 87
     },
     {
       "val": "2343212342",
-      "offset": 76
+      "offset": 96
     },
     {
       "val": "https://www.USbank.com",
-      "offset": 93
+      "offset": 113
     }
   ],
-  "location": "StepDefinition.user_enters_and_and_and_and_and_and(String,String,String,String,String,String,String)"
+  "location": "StepDefinition.User_fills_up_the_form_entering_and_and_and_and_and_and(String,String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 2882940401,
+  "duration": 3092500100,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.User_clicks_on_Submit_Button()"
 });
 formatter.result({
-  "duration": 2123415701,
+  "duration": 1672120100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepDefinition.User_should_be_able_to_see_validate()"
+});
+formatter.result({
+  "duration": 819361100,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 899849700,
   "status": "passed"
 });
 });

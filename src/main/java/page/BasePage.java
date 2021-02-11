@@ -10,17 +10,8 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
-
-	public void waitForElement(WebDriver driver, int timeInSeconds, WebElement elementLocator) {
-
-		WebDriverWait wait = new WebDriverWait(driver, timeInSeconds);
-		wait.until(ExpectedConditions.visibilityOf(elementLocator));
-	}
 
 	public int randomGenerator(int boundryNumber) {
 		Random rnd = new Random();
@@ -28,7 +19,7 @@ public class BasePage {
 		return randomNumber;
 		
 	}
-	public void takeScreenshotAtEndOfTest(WebDriver driver) throws IOException {
+	public void takeScreenshotAtEndOfTest(WebDriver driver) throws IOException { 
 
 		TakesScreenshot ts = ((TakesScreenshot) driver);
 		SimpleDateFormat formatter = new SimpleDateFormat("MMddyy_HHmmss");

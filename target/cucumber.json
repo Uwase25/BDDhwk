@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1200012800,
+              "duration": 1850947800,
               "status": "passed"
             },
             "line": 5,
@@ -27,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 4818763499,
+              "duration": 5170382400,
               "status": "passed"
             },
             "match": {
@@ -35,20 +35,31 @@
             }
           }
         ],
-        "line": 21,
+        "line": 20,
         "name": "User should be able to login with the valid credentials and create new account",
         "description": "",
         "id": "login-functionality-feature;user-should-be-able-to-login-with-the-valid-credentials-and-create-new-account;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 899849700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2421306200,
+              "duration": 2379132200,
               "status": "passed"
             },
             "line": 9,
-            "name": "Users enter \"demo@techfios.com\" and \"abc123\"",
+            "name": "User enters \"demo@techfios.com\" and \"abc123\"",
             "match": {
               "arguments": [
                 {
@@ -60,7 +71,7 @@
                   "offset": 37
                 }
               ],
-              "location": "StepDefinition.Users_enter_and(String,String)"
+              "location": "StepDefinition.User_enters_and(String,String)"
             },
             "matchedColumns": [
               0,
@@ -70,31 +81,31 @@
           },
           {
             "result": {
-              "duration": 3755940900,
+              "duration": 3709570900,
               "status": "passed"
             },
             "line": 10,
-            "name": "Users click on signin button",
+            "name": "User clicks on signin button",
             "match": {
-              "location": "StepDefinition.Users_click_on_signin_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 471261799,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Users should land on Dashboard page",
-            "match": {
-              "location": "StepDefinition.Users_should_land_on_Dashboard_page()"
+              "location": "StepDefinition.User_clicks_on_signin_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2106548200,
+              "duration": 387689600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should land on Dashboard page",
+            "match": {
+              "location": "StepDefinition.User_should_land_on_Dashboard_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2108530600,
               "status": "passed"
             },
             "line": 12,
@@ -102,11 +113,11 @@
             "match": {
               "location": "StepDefinition.User_clicks_on_Bank_And_Cash()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 3034883601,
+              "duration": 2726330701,
               "status": "passed"
             },
             "line": 13,
@@ -114,59 +125,47 @@
             "match": {
               "location": "StepDefinition.User_clicks_on_New_Account()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 373475699,
+              "duration": 3092500100,
               "status": "passed"
             },
             "line": 14,
-            "name": "User should land on Accounts page",
-            "match": {
-              "location": "StepDefinition.user_should_land_on_Accounts_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2882940401,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User enters \"Uwase\" and \"FamilyAccount\" and \"200\" and \"12345\" and \"JU\" and \"2343212342\" and \"https://www.USbank.com\"",
+            "name": "User fills up the form entering \"Uwase\" and \"FamilyAccount\" and \"200\" and \"12345\" and \"JU\" and \"2343212342\" and \"https://www.USbank.com\"",
             "match": {
               "arguments": [
                 {
                   "val": "Uwase",
-                  "offset": 13
+                  "offset": 33
                 },
                 {
                   "val": "FamilyAccount",
-                  "offset": 25
-                },
-                {
-                  "val": "200",
                   "offset": 45
                 },
                 {
+                  "val": "200",
+                  "offset": 65
+                },
+                {
                   "val": "12345",
-                  "offset": 55
+                  "offset": 75
                 },
                 {
                   "val": "JU",
-                  "offset": 67
+                  "offset": 87
                 },
                 {
                   "val": "2343212342",
-                  "offset": 76
+                  "offset": 96
                 },
                 {
                   "val": "https://www.USbank.com",
-                  "offset": 93
+                  "offset": 113
                 }
               ],
-              "location": "StepDefinition.user_enters_and_and_and_and_and_and(String,String,String,String,String,String,String)"
+              "location": "StepDefinition.User_fills_up_the_form_entering_and_and_and_and_and_and(String,String,String,String,String,String,String)"
             },
             "matchedColumns": [
               2,
@@ -177,17 +176,29 @@
               7,
               8
             ],
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 2123415701,
+              "duration": 1672120100,
               "status": "passed"
             },
-            "line": 16,
+            "line": 15,
             "name": "User clicks on Submit Button",
             "match": {
               "location": "StepDefinition.User_clicks_on_Submit_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 819361100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should be able to see validate",
+            "match": {
+              "location": "StepDefinition.User_should_be_able_to_see_validate()"
             },
             "keyword": "Then "
           }
