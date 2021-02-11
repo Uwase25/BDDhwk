@@ -1,0 +1,223 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1200012800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Techfios login page",
+            "match": {
+              "location": "StepDefinition.User_is_on_Techfios_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4818763499,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.beforeRun()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "User should be able to login with the valid credentials and create new account",
+        "description": "",
+        "id": "login-functionality-feature;user-should-be-able-to-login-with-the-valid-credentials-and-create-new-account;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2421306200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Users enter \"demo@techfios.com\" and \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demo@techfios.com",
+                  "offset": 13
+                },
+                {
+                  "val": "abc123",
+                  "offset": 37
+                }
+              ],
+              "location": "StepDefinition.Users_enter_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3755940900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Users click on signin button",
+            "match": {
+              "location": "StepDefinition.Users_click_on_signin_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 471261799,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Users should land on Dashboard page",
+            "match": {
+              "location": "StepDefinition.Users_should_land_on_Dashboard_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2106548200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks on Bank And Cash",
+            "match": {
+              "location": "StepDefinition.User_clicks_on_Bank_And_Cash()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3034883601,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User clicks on New Account",
+            "match": {
+              "location": "StepDefinition.User_clicks_on_New_Account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 373475699,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should land on Accounts page",
+            "match": {
+              "location": "StepDefinition.user_should_land_on_Accounts_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2882940401,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters \"Uwase\" and \"FamilyAccount\" and \"200\" and \"12345\" and \"JU\" and \"2343212342\" and \"https://www.USbank.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Uwase",
+                  "offset": 13
+                },
+                {
+                  "val": "FamilyAccount",
+                  "offset": 25
+                },
+                {
+                  "val": "200",
+                  "offset": 45
+                },
+                {
+                  "val": "12345",
+                  "offset": 55
+                },
+                {
+                  "val": "JU",
+                  "offset": 67
+                },
+                {
+                  "val": "2343212342",
+                  "offset": 76
+                },
+                {
+                  "val": "https://www.USbank.com",
+                  "offset": 93
+                }
+              ],
+              "location": "StepDefinition.user_enters_and_and_and_and_and_and(String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2123415701,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User clicks on Submit Button",
+            "match": {
+              "location": "StepDefinition.User_clicks_on_Submit_Button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Login"
+          },
+          {
+            "line": 1,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Login Functionality Feature",
+    "description": "",
+    "id": "login-functionality-feature",
+    "keyword": "Feature",
+    "uri": "features/Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Login"
+      },
+      {
+        "line": 1,
+        "name": "@Regression"
+      }
+    ]
+  }
+]
